@@ -1,5 +1,38 @@
 # My CS Projects
 
+## Project: Refactoring and Extending a Travel Optimization System
+
+### Overview
+
+In this course, my team worked on improving a large, existing Java-based system that generated optimized travel routes between destinations. The goal was to refactor legacy code, improve structure and maintainability, and introduce new functionality while ensuring the system remained stable and testable. We used agile development practices, Git-based collaboration, and UML documentation to manage our progress.
+
+### My Work
+
+Working as part of a five-person team, I contributed to both the design and implementation stages:
+	
+•	Feature Development: implemented and improved the program’s optimization logic by integrating different algorithms (Nearest Neighbor, OneOptimizer, etc.) through a new OptimizerFactory.
+	
+•	Design Refactoring: applied object-oriented design patterns (Factory, Template Method) to organize the codebase and reduce redundancy.
+	
+•	TourRequest Integration: helped redesign the TourRequest and TourOptimizer classes so they interacted more cleanly, using abstract methods for improved flexibility.
+	
+•	Team Coordination: collaborated through Git branches and pull requests, resolved merge conflicts, and conducted code reviews to maintain consistent style and quality.
+	
+•	Testing & Documentation: contributed to JUnit test suites, reviewed peer code for functionality and clarity, and helped update the UML diagrams and design summaries.
+
+Technical Notes
+
+•	Languages: Java
+	
+•	Tools: GitHub, Gradle, JUnit, UML
+	
+•	Concepts: Design patterns (Factory, Template Method), code modularity, agile teamwork, version control
+
+### Reflection
+
+This project taught me how to work on a shared, evolving codebase, where communication and structure were just as important as writing code. By coordinating across multiple team members, we learned how to build on each other’s work without conflicts, balance priorities during sprints, and deliver stable, maintainable features under real project conditions. It reinforced the value of teamwork and clear architecture in professional software engineering.
+
+
 ## [Project: Music Analyzer — Interactive CLI Application](https://github.com/yeahbrahh/Music-Analyzer)
 
 This project involved developing a stateful, menu-driven command-line program in Java that analyzed music datasets stored in CSV files. Users could load a folder of files, select a dataset, and run a variety of analytical features such as Song Stats, User Similarity, User Prediction, and User Recommendation.
@@ -35,32 +68,6 @@ I built both the core analysis logic and the interactive user interface that tie
 ### Reflection
 
 Building the Music Analyzer from core logic to full user interface gave me hands-on experience with modular program design. It was the first time I had to integrate multiple independent features into one smooth user experience, a challenge that strengthened both my technical skills and my ability to structure large projects clearly.
-
-
-## Project: Team-Based Software System Enhancement
-
-### Overview
-This course emphasized professional software engineering practices including teamwork, documentation, and iterative improvement of a large codebase. Our group worked on an existing system, refactoring and extending it to meet new requirements while maintaining reliability and readability.
-
-### My Work
-I contributed across all stages of development:
-	
-•	Feature Development: implemented new functionality within an existing architecture, ensuring backward compatibility and consistent design.
-	
-•	Code Quality & Refactoring: simplified complex classes, reduced redundancy, and improved maintainability through clear method structure and consistent naming.
-	
-•	Version Control & Collaboration: used Git branches and pull requests for clean merges and issue tracking; resolved conflicts and reviewed teammates’ code.
-	
-•	Testing & Debugging: created and executed unit tests to verify new features, validated error handling, and ensured the system met all acceptance criteria.
-	
-•	Documentation: helped write the design summary and update UML diagrams to reflect code changes and new class relationships.
-
-### Technical Notes
-	
-•	Tools: GitHub, Gradle, JUnit, UML, Agile workflow (scrum-style sprints)
-	
-•	Languages: Java, SQL
-
 
 
 ## [Project: Voice and Gaze-Controlled Maze Navigation Experiment](https://github.com/Principles-of-HCI-Group-7/maze)
