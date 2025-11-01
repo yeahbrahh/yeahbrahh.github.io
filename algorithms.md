@@ -30,6 +30,15 @@ def nQueensAll(N):
     backtrack(0, [])
     return res
 ```
+Thought Process:
+
+At first, I only knew that no two queens could be on the same row or column, but I had to figure out how to deal with diagonals. After some research, I found out that the left diagonal could be found using (row – column) and right diagonal (row + column). I took some time to understand the backtracking solution next. 
+
+Coding it:
+
+ I began by creating an empty list to store the results. I decided to put the backtracking function inside nQueensAll(N) so I wouldn’t have to worry about any issues with scope when passing in variables like N and I knew I needed to call backtrack non-recursively inside the other function with 0 and an empty list passed in to begin the backtracking recursion.
+ Recursion: I made a base case for when the last row is hit which adds a copy of the path list to the list of results then returns. Then, I set the column to true to start, inside that same loop- I also looped through the path using a tuple to find squares that can be attacked and set them to false. If the square is safe, we put a queen there recursively pass in the path and move to the next row. When it is done recursing, the last entry of path is popped off the stack so it can start over and find a new set of solutions. 
+Finally, I returned the results.
 
 ## Radix Sort
 
@@ -58,6 +67,8 @@ def radix_base(values_to_sort, base):
 
     return new_list
 ```
+ Isolating the digits was my big challenge here. To do that, I used the max value in the list, so I could create a condition for the loop to exit because after the left-most digit place (MSD) was processed, there would be nothing else to do. With a little thought, I figured I could go through each value in the list, divide the value by the base and take the remainder then I would end up with the LSD and know which bucket the value goes in. The idea became to repeat this process on all the digits in each number. Finally, just combine the lists and you have one sorted list! By the end, I understood how the base controlled which digit I was isolating, and how repeating the process for every digit place led to a fully sorted list.
+
 
 ## Dirty Deck
 
@@ -134,6 +145,10 @@ if __name__ == "__main__":
         print("invalid hide fails")
 
 ```
+I began by reviewing playingcard.py to understand how to access each card’s rank, which I needed for several methods. After fixing a small typo in the starter code that prevented access to some attributes, I focused on implementing deal(). I added an exception to prevent dealing when too few cards remained, then removed and returned the top card with pop(0).
+
+The shuffle() method took a bit more thought, but following the lab instructions helped. I used a backward loop to swap cards randomly, then handled the hidden rank case by moving any matching cards to the bottom. The hardest part was debugging randomness—since each run can look different, it’s tricky to tell whether an issue is fixed or just didn’t appear that time. Overall, this lab was straightforward and helped reinforce my understanding of loops, conditionals, and randomness in Python.
+
 ## Breadth First Search
 
 ```python
@@ -172,6 +187,9 @@ def bfs(graph: GraphEL, start: VertexEL):
 
     return tuple_list
 ```
+Breadth-First Search (BFS) is a way to explore a graph level by level. In my bfs function, I start by checking that both the graph and the starting vertex are valid. Then I create a data structure to keep track of which vertices I’ve already visited (I used a set here because the order does not matter and there can be no duplicate vertices in a graph) and a tuple_list that stores the vertices level by level. Each tuple represents one level of the search.
+
+Inside the while loop, I look at each vertex in the current level. For every edge that touches that vertex, I find the neighboring vertex using v1 if v2 == vertex else v2. If that neighbor hasn’t been seen, I mark it as seen and add it to the next level. When that next level is all seen, I append it to tuple_list. By the end, tuple_list holds the vertices grouped by their distance from the start.
 
 ## Cuckoo Hashing
 
@@ -312,6 +330,14 @@ class CuckooSet(Collection):
         elif x == self.htab2[h2]:
             self.htab2[h2] = None
 ```
+In the add method, each value gets two possible locations determined by two hash functions. First, we try to place the value in the first table. If that spot is already full, it swaps the existing element out and tries to insert it into its second position in table two. If that spot is also full, the process repeats, swapping values back and forth until an open spot is found or the swap limit is reached. When the counter hits max swaps, the table resizes and rehashes all elements to make more space (I wonder if there may be a way to improve this by not having to refill the table each time?).
+
+The __contains__ method is simple—it uses the same two hash locations to check for the element in both tables. Because every value can only ever exist in one of two specific locations, membership can be determined in O(1) time.
+
+The remove method works by first checking if the item exists using __contains__. If it does, the function finds which table it’s in and sets that slot to None. If it isn’t found, it raises a KeyError.
+
+The discard method is similar to remove, but it skips the error-handling part. It tries to delete the key from either table if it exists, but if it doesn’t, nothing happens.
+
 ## Lists as Trees
 
 ```python
@@ -412,6 +438,21 @@ def findMinIndex(index, tree):
             break
         index = left_index
 ```
+A list representing a tree is one where the root is the very first index and as you move down the list, the value in the (i * 2 + 1) index is the left child while the value in the ( i * 2 + 2) index is the right child of tree[i].
+One of the challenges I faced working with a list representing a tree was understanding how to properly reference the children and values inside the nodes because I had previously only used linked lists where I could just point to node.left for example. 
+Finding and adding were easy enough, to add I just needed to keep comparing node until I found and empty spot on the left or right side. When it came to deleting, I knew I would have three cases to deal with.
+Nodes with: 
+
+•	No children
+
+•	One child
+
+•	Two children
+
+I wrote Boolean methods to find leaves and nodes with a single child. To determine where to put nodes with two children, I had to create another method to find the index of the successor so I could replace the node with its in order successor. 
+
+
+
 ## Counting String Permutations
 
 ```python
@@ -450,6 +491,8 @@ def countPermStr(string1, string2):
 
     return matches
 ```
+
+I quickly got a working solution using a simple loop that compared each substring window to the target, which gave me time to focus on improving efficiency. Intuitively, I realized I could optimize the runtime by maintaining a running count of characters within the current window. Instead of rebuilding the count each time, I updated it dynamically as characters entered and left the window, effectively simulating a sliding motion across the string.
 ## Palindrome Number
 
 ```python
