@@ -1,6 +1,6 @@
 # Gage Boullosa
 
-I’m Gage Boullosa, a Computer Science student at Colorado State University concentrating in Computing for Creatives and software development. I enjoy blending logic, design, and creativity to build interactive and meaningful digital experiences. I work mainly with Python and Java, and I’m comfortable working on both creative projects and large, structured systems.
+I am Gage Boullosa, a third year Computer Science student at Colorado State University concentrating in Computing for Creatives and interested in software development. I enjoy blending logic, design, and creativity to build interactive and meaningful digital experiences. I work mainly with Python and Java, and I’m comfortable working on both creative projects and large, structured systems.
 
  ## Current Goals
 
