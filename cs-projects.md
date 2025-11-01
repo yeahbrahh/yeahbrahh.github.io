@@ -94,8 +94,4 @@ Working as part of a small team, I contributed to both the technical and design 
 ### Reflection
 This project highlighted the importance of team communication and coordination in balancing design goals with implementation needs. By working together to integrate different input systems and refine the experiment based on user feedback, we learned how collaboration enhances both technical quality and user experience. It reinforced how human-computer interaction is not only about interfaces but also about teamwork and shared problem-solving throughout the design process.
 
-	
-•	Focus Areas: refactoring, modular design, collaboration, version control, testing
 
-### Reflection
-This project taught me how to work effectively in a professional development cycle — balancing personal code style with group standards, communicating clearly about design choices, and integrating changes smoothly in a shared repository. It strengthened my ability to contribute to larger systems rather than isolated programs.
