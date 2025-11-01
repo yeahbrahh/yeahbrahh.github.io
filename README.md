@@ -8,4 +8,6 @@ Expanding my portfolio with new creative coding projects and continuing to explo
 
 [View My CSU Projects](cs-projects.md)
 
+[View My Resume](https://github.com/yeahbrahh/yeahbrahh.github.io/blob/main/Gage_B_Resume.pdf)
+
 [View My Algorithm Implementations](algorithms.md)
