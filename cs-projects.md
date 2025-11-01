@@ -1,4 +1,4 @@
-# [Project: Music Analyzer — Interactive CLI Application](https://github.com/yeahbrahh/Music-Analyzer)
+## [Project: Music Analyzer — Interactive CLI Application](https://github.com/yeahbrahh/Music-Analyzer)
 
 This project involved developing a stateful, menu-driven command-line program in Java that analyzed music datasets stored in CSV files. Users could load a folder of files, select a dataset, and run a variety of analytical features such as Song Stats, User Similarity, User Prediction, and User Recommendation.
 
@@ -35,7 +35,7 @@ I built both the core analysis logic and the interactive user interface that tie
 Building the Music Analyzer from core logic to full user interface gave me hands-on experience with modular program design. It was the first time I had to integrate multiple independent features into one smooth user experience, a challenge that strengthened both my technical skills and my ability to structure large projects clearly.
 
 
-# Project: Team-Based Software System Enhancement
+## Project: Team-Based Software System Enhancement
 
 ### Overview
 This course emphasized professional software engineering practices including teamwork, documentation, and iterative improvement of a large codebase. Our group worked on an existing system, refactoring and extending it to meet new requirements while maintaining reliability and readability.
@@ -61,7 +61,7 @@ I contributed across all stages of development:
 
 
 
-# [Project: Voice and Gaze-Controlled Maze Navigation Experiment](https://github.com/Principles-of-HCI-Group-7/maze)
+## [Project: Voice and Gaze-Controlled Maze Navigation Experiment](https://github.com/Principles-of-HCI-Group-7/maze)
 
 This course focused on understanding how people interact with technology and how to design systems that support intuitive, accessible user experiences. My team developed a Unity-based experiment that compared two input modalities (voice commands and eye-tracking) to study their effects on user navigation and performance in a virtual maze.
 
